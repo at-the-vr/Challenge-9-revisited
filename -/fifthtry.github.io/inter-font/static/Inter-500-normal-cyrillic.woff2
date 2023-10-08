@@ -1,4 +1,5 @@
 -- import: at-the-vr.github.io/challenge-9-revisited/components/theNavbar
+-- import: at-the-vr.github.io/challenge-9-revisited/components/theHero
 
 -- ftd.column:
 id: main-page
@@ -13,5 +14,9 @@ navlink-1: Home
 link-1: #
 navlink-2: What I have been upto
 link-2: #
+
+-- theHero.theHeroContainer:
+title: This Area happens to be 
+subtitle: filled with some of my liked Blog Posts from Developers across the World
 
 -- end: ftd.column
