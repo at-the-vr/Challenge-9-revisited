@@ -14,11 +14,11 @@ types: $electrolyze-typography.types
 
 -- theNavbar.theNavbarContainer:
 title: My Amusments
-title-link: index.html
+title-link: #
 navlink-1: Home
-link-1: index.html
+link-1: #
 navlink-2: What I have been upto
-link-2: /roaming/
+link-2: /roaming
 
 -- theHero.theHeroContainer:
 title: This Area happens to be 
