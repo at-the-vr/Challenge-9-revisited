@@ -1,4 +1,3 @@
--- import: at-the-vr.github.io/electrolyze-typography
 
 -- component theNavbarContainer:
 string title:
@@ -15,14 +14,14 @@ optional string link-3:
 optional boolean $is-hover-l3: false
 
 -- ftd.row:
-height: fill-container
 width: fill-container
-types: $electrolyze-typography.types
+margin-bottom.px: 30
 
 -- ftd.row:
 width: fill-container
 padding.px: 40
 spacing.fixed.px: 300
+background.solid: #321450
 
 -- ftd.text: $theNavbarContainer.title
 role: $inherited.types.heading-medium
