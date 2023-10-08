@@ -1,0 +1,25 @@
+-- component theFooterContainer:
+string copywrite: 
+
+
+-- ftd.column:
+background.solid: #321450
+width: fill-container
+padding-vertical.rem: 2
+spacing.fixed.px: 20
+
+-- ftd.text: $theFooterContainer.copywrite
+color: #fff
+role: $inherited.types.copy-regular
+width: fill-container
+text-align: center
+
+-- ftd.text: Powered by [`fastn`](https://fastn.com/) - Surprisingly Light Weight ☁
+color: #fff
+role: $inherited.types.copy-large
+width: fill-container
+text-align: center
+
+-- end: ftd.column
+
+-- end: theFooterContainer

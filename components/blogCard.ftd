@@ -1,0 +1,47 @@
+-- component blogCardContainer:
+string id:
+string title:
+string description:
+optional string image-src:
+string type:
+string trueLink:
+
+-- ftd.row:
+id: $blogCardContainer.id
+background.solid: #321450
+padding-vertical.px: 24
+margin-vertical.px: 24
+padding-horizontal.px: 40
+border-radius.px: 12
+spacing.fixed.px: 20
+cursor: pointer
+link: $blogCardContainer.trueLink
+open-in-new-tab: true
+width.fixed.px: 600
+
+-- ftd.column:
+spacing.fixed.px: 20
+z-index: 1
+width: fill-container
+
+-- ftd.text: $blogCardContainer.type
+width: fill-container
+text-align: center
+color: #fff
+role: $inherited.types.heading-small
+style: underline
+
+-- ftd.text: $blogCardContainer.title
+color: #fff
+role: $inherited.types.heading-medium
+
+-- ftd.text: $blogCardContainer.description
+color: #fff
+role: $inherited.types.copy-large
+text-align: justify
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: blogCardContainer

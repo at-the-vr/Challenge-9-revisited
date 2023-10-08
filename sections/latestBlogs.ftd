@@ -1,0 +1,44 @@
+-- import: at-the-vr.github.io/challenge-9-revisited/components/blogCard
+
+-- component blogContainer:
+
+-- ftd.column:
+width: fill-container
+padding-horizontal.px: 50
+
+-- ftd.text: Latest Findings
+color: #fff
+role: $inherited.types.heading-medium
+
+-- ftd.column:
+margin-vertical.px: 100
+width: fill-container
+align-content: center
+spacing.fixed.px: 80
+
+-- ftd.row:
+spacing: space-evenly
+align-content: center
+width: fill-container
+
+-- blogCard.blogCardContainer:
+id: 1
+title: Why I don't use Prettier
+type: Dependencies
+description: If you like to install Prettier every time you bootstrap a Project, this Blog Article might open your eyes to some drawbacks of Prettier
+trueLink: https://antfu.me/posts/why-not-prettier
+
+-- blogCard.blogCardContainer:
+id: 2
+title: 25+ Paid Open Source Programs and Internships
+type: Paid Internships
+description: Want to earn while working remotely via Open Source ?? Click here to find out more
+trueLink: https://blog.wemakedevs.org/25-paid-open-source-programs-and-internships
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: blogContainer

@@ -4,7 +4,7 @@ string subtitle:
 
 -- ftd.column:
 width: fill-container
-padding-vertical.px: 200
+padding-vertical.px: 100
 spacing.fixed.px: 70
 
 -- ftd.text: $theHeroContainer.title
