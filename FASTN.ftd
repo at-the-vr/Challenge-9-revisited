@@ -7,6 +7,7 @@ favicon: /-/at-the-vr.github.io/challenge-9-revisited/favicon.ico
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/roboto-typography
 -- fastn.dependency: fastn-community.github.io/dark-flame-cs
+-- fastn.dependency: at-the-vr.github.io/electrolyze-typography
 
 -- fastn.auto-import: at-the-vr.github.io/challenge-9-revisited/FASTN/ds
 -- fastn.auto-import: at-the-vr.github.io/challenge-9-revisited/assets
