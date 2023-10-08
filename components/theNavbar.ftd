@@ -1,0 +1,73 @@
+-- import: at-the-vr.github.io/electrolyze-typography
+
+-- component theNavbarContainer:
+string title:
+string title-link:
+boolean $is-hover-tl: false
+string link-1:
+string navlink-1:
+boolean $is-hover-l1: false
+string navlink-2:
+string link-2:
+boolean $is-hover-l2: false
+optional string navlink-3:
+optional string link-3:
+optional boolean $is-hover-l3: false
+
+-- ftd.row:
+height: fill-container
+width: fill-container
+types: $electrolyze-typography.types
+
+-- ftd.row:
+width: fill-container
+padding.px: 40
+spacing.fixed.px: 300
+
+-- ftd.text: $theNavbarContainer.title
+role: $inherited.types.heading-medium
+cursor: pointer
+link: $theNavbarContainer.title-link
+color if { theNavbarContainer.is-hover-tl } : #8487F6
+$on-mouse-enter$: $ftd.set-bool($a = $theNavbarContainer.is-hover-tl, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $theNavbarContainer.is-hover-tl, v = false)
+
+-- ftd.row:
+height: fill-container
+spacing.fixed.px: 50
+
+-- ftd.text: $theNavbarContainer.navlink-1
+role: $inherited.types.heading-small
+link: $theNavbarContainer.link-1
+color: #FEFFFF
+color if { theNavbarContainer.is-hover-l1 } : #8487F6
+$on-mouse-enter$: $ftd.set-bool($a = $theNavbarContainer.is-hover-l1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $theNavbarContainer.is-hover-l1, v = false)
+
+-- ftd.text: $theNavbarContainer.navlink-2
+role: $inherited.types.heading-small
+link: $theNavbarContainer.link-2
+color: #FEFFFF
+color if { theNavbarContainer.is-hover-l2 } : #8487F6
+$on-mouse-enter$: $ftd.set-bool($a = $theNavbarContainer.is-hover-l2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $theNavbarContainer.is-hover-l2, v = false)
+
+-- ftd.text: $theNavbarContainer.navlink-3
+if: {$theNavbarContainer.navlink-3 != NULL}
+role: $inherited.types.heading-small
+link: $theNavbarContainer.link-3
+color: #FEFFFF
+color if { theNavbarContainer.is-hover-l3 } : #8487F6
+$on-mouse-enter$: $ftd.set-bool($a = $theNavbarContainer.is-hover-l3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $theNavbarContainer.is-hover-l3, v = false)
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: theNavbarContainer
+
+
+
