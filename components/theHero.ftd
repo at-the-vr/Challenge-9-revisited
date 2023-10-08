@@ -1,0 +1,25 @@
+-- component theHeroContainer:
+string title: 
+string subtitle:
+
+-- ftd.column:
+width: fill-container
+padding-vertical.px: 200
+spacing.fixed.px: 70
+
+-- ftd.text: $theHeroContainer.title
+color: white
+text-align: center
+width: fill-container
+role: $inherited.types.heading-large
+
+-- ftd.text: $theHeroContainer.subtitle
+color: white
+text-align: center
+width: fill-container
+role: $inherited.types.heading-medium
+
+-- end: ftd.column
+
+-- end: theHeroContainer
+
