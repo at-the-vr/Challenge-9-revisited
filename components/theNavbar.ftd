@@ -1,4 +1,3 @@
-
 -- component theNavbarContainer:
 string title:
 string title-link:
@@ -12,10 +11,14 @@ boolean $is-hover-l2: false
 optional string navlink-3:
 optional string link-3:
 optional boolean $is-hover-l3: false
+optional boolean $on-click: false
+
 
 -- ftd.row:
 width: fill-container
 margin-bottom.px: 30
+
+-- ftd.desktop:
 
 -- ftd.row:
 width: fill-container
@@ -51,22 +54,109 @@ color if { theNavbarContainer.is-hover-l2 } : #8487F6
 $on-mouse-enter$: $ftd.set-bool($a = $theNavbarContainer.is-hover-l2, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $theNavbarContainer.is-hover-l2, v = false)
 
--- ftd.text: $theNavbarContainer.navlink-3
-if: {$theNavbarContainer.navlink-3 != NULL}
-role: $inherited.types.heading-small
-link: $theNavbarContainer.link-3
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- ftd.row:
+id: mobile-nav
+height.fixed.px: 100
+width: fill-container
+padding.px: 40
+background.solid: #321450
+z-index: 1000
+
+
+;; Hamburger menu
+-- ftd.image:
+src: $assets.files.assets.white-hamburger.svg
+height.fixed.px: 40
+width.fixed.px: 40
+cursor: pointer
+anchor.id: mobile-nav
+top.px: 40
+right.px: 20
+$on-click$: $ftd.toggle($a = $theNavbarContainer.on-click)
+
+;; Title
+-- ftd.text: $theNavbarContainer.title
+;; color if {theNavbarContainer.theme == "light"}: #000
+;; color: #fff
 color: #FEFFFF
-color if { theNavbarContainer.is-hover-l3 } : #8487F6
-$on-mouse-enter$: $ftd.set-bool($a = $theNavbarContainer.is-hover-l3, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $theNavbarContainer.is-hover-l3, v = false)
+role: $inherited.types.heading-small
+cursor: pointer
+text-align: center
+width: fill-container
+link: $theNavbarContainer.title-link
+
+
+;; Navlinks
+-- ftd.column:
+id: mobile-navlinks
+height.fixed.vh: 100
+width: fill-container
+;; background.solid if {theNavbarContainer.theme == "light"}: #fff
+;; background.solid: #000
+background.solid: #01012B
+spacing.fixed.px: 40
+padding.px: 40
+anchor: window
+top.px: 0
+left.px: 0
+;; z-index: 9999
+if: {$theNavbarContainer.on-click}
+
+
+;; Close button Container
+-- ftd.row:
+width: fill-container
+
+
+;; Close button image
+-- ftd.image:
+anchor.id: mobile-navlinks
+top.px: 40
+right.px: 40
+src: $assets.files.assets.white-cross.svg
+height.fixed.px: 40
+width.fixed.px: 40
+cursor: pointer
+$on-click$: $ftd.toggle($a = $theNavbarContainer.on-click)
+
+-- end: ftd.row
+;; END OF CLOSE BUTTON CONTAINER
+
+-- ftd.column:
+spacing.fixed.px: 10
+width: fill-container
+align-content: right
+
+-- ftd.text: $theNavbarContainer.navlink-1
+role: $inherited.types.heading-small
+link: $theNavbarContainer.link-1
+color: #FEFFFF
+$on-click$: $ftd.toggle($a = $theNavbarContainer.on-click)
+
+-- ftd.text: $theNavbarContainer.navlink-2
+role: $inherited.types.heading-small
+link: $theNavbarContainer.link-2
+color: #FEFFFF
+text-align: end
+;; $on-click$: $ftd.toggle($a = $theNavbarContainer.on-click)
+
+-- end: ftd.column
+
+-- end: ftd.column
+
 
 -- end: ftd.row
 
--- end: ftd.row
+-- end: ftd.mobile
 
 -- end: ftd.row
 
 -- end: theNavbarContainer
-
-
-

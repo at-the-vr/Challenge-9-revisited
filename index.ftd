@@ -2,7 +2,7 @@
 -- import: at-the-vr.github.io/challenge-9-revisited/components/theHero
 -- import: at-the-vr.github.io/challenge-9-revisited/components/theFooter
 -- import: at-the-vr.github.io/challenge-9-revisited/sections/latestBlogs
--- import: at-the-vr.github.io/electrolyze-typography
+-- import: fastn-community.github.io/inter-typography
 -- import: at-the-vr.github.io/challenge-9-revisited/roaming
 
 -- ftd.column:
@@ -10,7 +10,7 @@ id: main-page
 height: fill-container
 width: fill-container
 background.solid: #29132E
-types: $electrolyze-typography.types
+types: $inter-typography.types
 
 -- theNavbar.theNavbarContainer:
 title: My Amusments
@@ -18,7 +18,7 @@ title-link: #
 navlink-1: Home
 link-1: #
 navlink-2: What I have been upto
-link-2: /roaming
+link-2: roaming
 
 -- theHero.theHeroContainer:
 title: This Area happens to be 

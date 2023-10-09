@@ -1,4 +1,4 @@
--- import: at-the-vr.github.io/electrolyze-typography
+-- import: fastn-community.github.io/inter-typography
 -- import: at-the-vr.github.io/challenge-9-revisited/components/theNavbar
 -- import: at-the-vr.github.io/challenge-9-revisited/components/theFooter
 
@@ -6,7 +6,7 @@
 height: fill-container
 width: fill-container
 background.solid: #29132E
-types: $electrolyze-typography.types
+types: $inter-typography.types
 
 -- theNavbar.theNavbarContainer:
 title: My Amusments
@@ -14,11 +14,11 @@ title-link: #
 navlink-1: Home
 link-1: #
 navlink-2: What I have been upto
-link-2: /roaming
+link-2: roaming
 
 -- ftd.column:
 color: #FEFFFF
-types: $electrolyze-typography.types
+types: $inter-typography.types
 width: fill-container
 align-content: center
 
@@ -55,7 +55,9 @@ margin-left.px: 20
 width: fill-container
 height: fill-container
 align-content: center
-spacing: space-evenly
+spacing.fixed.px: 80
+margin-bottom.px: 50
+wrap: true
 
 -- projectField:
 imageSrc: https://user-images.githubusercontent.com/88548999/273470352-0c134288-8cfe-4a5c-bcdc-05d20ec80319.jpg
@@ -90,7 +92,7 @@ string siteURL:
 text: $projectField.siteName
 color: #FEFFFF
 style: underline
-role: $inherited.types.heading-large
+role: $inherited.types.heading-small
 link: $projectField.siteURL
 open-in-new-tab: true
 
