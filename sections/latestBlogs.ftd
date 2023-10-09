@@ -6,20 +6,16 @@
 width: fill-container
 padding-horizontal.px: 50
 
--- ftd.text: Latest Findings
+-- ftd.text: \# Latest Findings
 color: #fff
 role: $inherited.types.heading-medium
 
--- ftd.column:
+-- ftd.row:
 margin-vertical.px: 100
 width: fill-container
 align-content: center
 spacing.fixed.px: 80
-
--- ftd.row:
-spacing: space-evenly
-align-content: center
-width: fill-container
+wrap: true
 
 -- blogCard.blogCardContainer:
 id: 1
@@ -36,8 +32,6 @@ description: Want to earn while working remotely via Open Source ?? Click here t
 trueLink: https://blog.wemakedevs.org/25-paid-open-source-programs-and-internships
 
 -- end: ftd.row
-
--- end: ftd.column
 
 -- end: ftd.column
 
